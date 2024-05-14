@@ -6,5 +6,67 @@
     <title>Document</title>
   </head>
 
-  <body></body>
+  <body class="page">
+    <form novalidate class="page__form form">
+      <div class="form__info">
+        <div class="form__title">Register now</div>
+
+        <div class="form__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          delectus et? Sint, ipsa. Obcaecati culpa maiores, nulla iure sed dicta
+          quibusdam, possimus quam error eveniet recusandae architecto
+          exercitationem enim nobis?
+        </div>
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="email">Email</label>
+        <input
+          class="form__input js-email"
+          type="email"
+          id="email"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="password">Password</label>
+        <input class="form__input js-password" type="password" id="password" />
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="password-confirm"
+          >Retype Password</label
+        >
+        <input
+          class="form__input js-password-confirm"
+          type="password"
+          id="password-confirm"
+        />
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="country">Country</label>
+        <select
+          class="form__input js-country"
+          name="country"
+          id="country"
+          autocomplete="off"
+        >
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="zip-code">Zip Code</label>
+        <input class="form__input js-zip-code" type="telephone" id="zip-code" />
+      </div>
+
+      <button class="form__submit-btn button">Submit</button>
+    </form>
+  </body>
 </html>

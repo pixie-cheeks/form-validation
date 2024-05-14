@@ -1,8 +1,7 @@
-/* eslint-disable import/no-import-module-exports */
 import './index.css';
 
-console.log('Check whether everything is working or not.');
-
-if (process.env.NODE_ENV === 'development' && module.hot) {
-  module.hot.accept();
-}
+const emailInput = document.querySelector('.js-email');
+const passwordInput = document.querySelector('.js-password');
+const passwordConfirmInput = document.querySelector('.js-password-confirm');
+const countrySelect = document.querySelector('.js-country');
+const zipCodeInput = document.querySelector('.js-zip-code');

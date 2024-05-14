@@ -8,5 +8,6 @@
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.formatOnSaveMode": "file",
-  "files.autoSave": "off"
+  "files.autoSave": "off",
+  "cSpell.enabled": false
 }

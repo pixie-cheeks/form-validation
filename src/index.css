@@ -1,2 +1,88 @@
 @import 'normalize.css';
 @import 'styles/reset.css';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-variableFont_slnt-wght.ttf');
+}
+
+.page {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 500px;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form__info {
+  grid-column: span 2;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.form__description {
+  color: #536387;
+  font-size: 1.5rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  color: #536387;
+}
+
+.form__field:nth-of-type(2) {
+  grid-column: span 2;
+}
+
+.form__label {
+  font-size: 1.4rem;
+  align-self: start;
+}
+
+.form__input {
+  --border-focus: #dde3ec;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid var(--border-focus);
+  border-radius: 5px;
+}
+
+.form__input:focus {
+  --border-focus: #6a64f1;
+  outline: none;
+  box-shadow: 0 0 0 0.5px var(--border-focus);
+}
+
+.form__input.is-valid {
+  --border-focus: green;
+}
+
+.form__input.is-invalid {
+  --border-focus: red;
+}
+
+.form__submit-btn {
+  grid-column: span 2;
+  place-self: start;
+}
+
+.button {
+  color: white;
+  background-color: #6a64f1;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
