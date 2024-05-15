@@ -10,7 +10,9 @@
   padding: 2rem;
   font-family: 'Inter', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .form {
@@ -18,7 +20,8 @@
   font-size: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  column-gap: 4rem;
+  row-gap: 1rem;
 }
 
 .form__info {
@@ -40,10 +43,12 @@
   display: flex;
   flex-direction: column;
   color: #536387;
+  position: relative;
 }
 
 .form__field:nth-of-type(2) {
   grid-column: span 2;
+  width: calc(50% - 2rem);
 }
 
 .form__label {
@@ -79,10 +84,50 @@
   place-self: start;
 }
 
+.form__error {
+  height: 4rem;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.form__required-icon {
+  color: red;
+}
+
+.form__valid-icon {
+  display: none;
+  position: absolute;
+  top: 23%;
+  right: -2rem;
+  color: green;
+}
+
 .button {
   color: white;
   background-color: #6a64f1;
   font-size: 1.6rem;
   border-radius: 5px;
   padding: 1rem;
+}
+
+.card {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card--hidden {
+  display: none;
+}
+
+.card__title {
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 2px blue;
+}
+
+.card__content {
+  text-shadow: 0 0 8px #6a64f1;
 }

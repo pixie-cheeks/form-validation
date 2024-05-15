@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <title>Document</title>
   </head>
 
@@ -20,53 +38,75 @@
       </div>
 
       <div class="form__field">
-        <label class="form__label" for="email">Email</label>
+        <label class="form__label" for="email"
+          >Email<span class="form__required-icon">*</span></label
+        >
         <input
           class="form__input js-email"
           type="email"
           id="email"
           autocomplete="off"
         />
+        <div class="form__error"></div>
+        <div class="form__valid-icon">&#x2714;</div>
       </div>
 
       <div class="form__field">
-        <label class="form__label" for="password">Password</label>
+        <label class="form__label" for="password"
+          >Password<span class="form__required-icon">*</span></label
+        >
         <input class="form__input js-password" type="password" id="password" />
+        <div class="form__error"></div>
+        <div class="form__valid-icon">&#x2714;</div>
       </div>
 
       <div class="form__field">
         <label class="form__label" for="password-confirm"
-          >Retype Password</label
+          >Retype Password<span class="form__required-icon">*</span></label
         >
         <input
           class="form__input js-password-confirm"
           type="password"
           id="password-confirm"
         />
+        <div class="form__error"></div>
+        <div class="form__valid-icon">&#x2714;</div>
       </div>
 
       <div class="form__field">
-        <label class="form__label" for="country">Country</label>
+        <label class="form__label" for="country"
+          >Country<span class="form__required-icon">*</span></label
+        >
         <select
           class="form__input js-country"
           name="country"
           id="country"
           autocomplete="off"
         >
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="nl">The Netherlands</option>
         </select>
+        <div class="form__error"></div>
+        <div class="form__valid-icon">&#x2714;</div>
       </div>
 
       <div class="form__field">
-        <label class="form__label" for="zip-code">Zip Code</label>
+        <label class="form__label" for="zip-code"
+          >Zip Code<span class="form__required-icon">*</span></label
+        >
         <input class="form__input js-zip-code" type="telephone" id="zip-code" />
+        <div class="form__error"></div>
+        <div class="form__valid-icon">&#x2714;</div>
       </div>
 
-      <button class="form__submit-btn button">Submit</button>
+      <button class="form__submit-btn button js-submit">Submit</button>
     </form>
+
+    <div class="card card--hidden js-congrats">
+      <div class="card__title">Congratulations!</div>
+      <div class="card__content">( ͡° ͜ʖ ͡°)</div>
+    </div>
   </body>
 </html>
